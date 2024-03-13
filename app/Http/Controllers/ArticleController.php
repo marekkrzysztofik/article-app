@@ -16,10 +16,11 @@ class ArticleController extends Controller
     }
     public function articlesByAuthor($authorId)
     {
-        $articles = Article::with('authors')->whereHas('authors', function ($query) use ($authorId) {
+        $articles = Article::whereHas('authors', function ($query) use ($authorId) {
             $query->where('authors.id', '=', $authorId);
         })->get();
-        return view("author", ['articles' => $articles]);
+        $author = Author::find($authorId);
+        return view("author", ['articles' => $articles, 'author'=> $author]);
     }
     public function store(Request $data)
     {

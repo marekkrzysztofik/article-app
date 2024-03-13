@@ -12,7 +12,7 @@
     <div class="article bg-dark">
         <h2 class="mb-1">Article {{ $article->id }}</h2>
         <p><span>Authors:</span> @foreach ($article->authors as $author)
-            {{ $author->name }},
+         <a href="/author/{{ $author->id }}">{{ $author->name }}</a>,
             @endforeach
         </p>
         <p><span>Title:</span> {{ $article->title }}</p>

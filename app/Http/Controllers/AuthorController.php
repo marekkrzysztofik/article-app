@@ -26,3 +26,4 @@ class AuthorController extends Controller
         return view("top", ['authors' => $topAuthors]);
     }
 }
+ 
