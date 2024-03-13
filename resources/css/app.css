@@ -154,7 +154,92 @@ textarea {
     cursor: pointer;
 }
 
+.green-text-hover:hover {
+    color: var(--green);
+}
+
 .green-border-focus:hover,
 .green-border-focus:focus {
     border-color: var(--green);
+}
+
+@media only screen and (max-width: 1400px) {
+    body {
+        width: 100vw;
+
+    }
+
+    .authors {
+        width: 35vw;
+    }
+}
+
+@media only screen and (max-width: 1000px) {
+    .navbar {
+        flex-direction: column;
+        border: none;
+        height: 25vh;
+    }
+
+    .navbar a {
+        margin-bottom: 0.5rem;
+    }
+
+    .column {
+        flex-direction: column;
+    }
+
+    .container {
+        height: 100%;
+        border: none;
+    }
+
+    .articles {
+        width: 80%;
+    }
+
+    .article-box {
+        width: 90%;
+    }
+
+    .authors {
+        width: 80%;
+        margin-bottom: 2rem;
+    }
+
+    .articles-grid {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .table {
+        width: 90%;
+        padding: 1rem;
+    }
+
+    .table td {
+        width: 35%;
+        text-align: center;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+    }
+
+    .select {
+        width: 80%;
+        margin: 2rem auto;
+    }
+
+    .height,
+    .height textarea {
+        height: 30%;
+    }
+
+    .button {
+        margin-top: 2rem;
+    }
+
+    .article {
+        width: 90%;
+    }
 }

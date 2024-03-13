@@ -5,7 +5,7 @@
     margin-top: 2rem;
     padding: 2rem;
 }
-
+ 
 .author-item {
     margin: 0.3rem auto;
     padding: 0.3rem 1rem;
@@ -15,6 +15,7 @@
 
 .top-authors {
     flex-direction: column;
+    text-align: center;
     justify-content: center;
 }
 
@@ -23,8 +24,6 @@
     padding: 2rem;
     height: 30vh;
     border-radius: 15px;
-
-
 }
 
 .table td {

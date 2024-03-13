@@ -21,7 +21,7 @@
                         <p class="article-content">{{ $article->content }}</p>
                     </div>
                 </a>
-                @endforeach
+                @endforeach 
                 @else
                 <p>No articles found.</p>
                 @endif

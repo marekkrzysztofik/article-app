@@ -13,8 +13,8 @@
     @section('content')
     <form action="{{ route('article.store') }}" method="post" class="mt-2">
         @csrf
-        <div class="flex">
-            <div class="articles bg-dark">
+        <div class="flex column">
+            <div class="articles bg-dark height">
                 <h3 for="title">Title:</h3>
                 <input type="text" class="input green-border-focus" name="title" required>
                 <h3 for="text">Text:</h3>
@@ -27,8 +27,8 @@
                     <option value="{{ $author->id }}">{{ $author->name }}</option>
                     @endforeach
                 </select>
-                
-            <button type="submit" class="button">Dodaj artykuł</button>
+
+                <button type="submit" class="button">Dodaj artykuł</button>
 
             </div>
         </div>

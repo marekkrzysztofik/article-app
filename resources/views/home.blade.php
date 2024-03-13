@@ -10,7 +10,7 @@
 <body>
     @extends('app')
     @section('content')
-    <div class=flex>
+    <div class="flex column">
         <div class="articles bg-dark mt-2">
             <h2 class="mb-1">List of articles</h2>
             <div class="scrollable-list">
@@ -27,7 +27,7 @@
                     @else
                     <p>No articles found.</p>
                     @endif
-                </div>
+                </div> 
             </div>
         </div>
         <div class="authors bg-dark">
