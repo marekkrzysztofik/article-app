@@ -20,7 +20,7 @@ class ArticleController extends Controller
             $query->where('authors.id', '=', $authorId);
         })->get();
         $author = Author::find($authorId);
-        return view("author", ['articles' => $articles, 'author'=> $author]);
+        return view("author", ['articles' => $articles, 'author' => $author]);
     }
     public function store(Request $data)
     {

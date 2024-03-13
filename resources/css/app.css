@@ -2,6 +2,7 @@
 @import "scroll.css";
 @import "button.css";
 @import "articles.css";
+@import "authors.css";
 
 :root {
     --dark: #22272b;
@@ -86,21 +87,6 @@ textarea {
     height: 68vh;
 }
 
-.authors {
-    width: 15vw;
-    height: 55vh;
-    border-radius: 10%;
-    margin-top: 2rem;
-    padding: 2rem;
-}
-
-.author-item {
-    margin: 0.3rem auto;
-    padding: 0.3rem 1rem;
-    border-radius: 10px;
-    transition: 0.2s all;
-}
-
 .input {
     width: 100%;
     background-color: var(--light-grey);
@@ -112,8 +98,6 @@ textarea {
     outline: none;
     transition: 0.2s all;
 }
-
-
 
 .select {
     width: 15vw;

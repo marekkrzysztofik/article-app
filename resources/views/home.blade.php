@@ -13,17 +13,22 @@
     <div class=flex>
         <div class="articles bg-dark mt-2">
             <h2 class="mb-1">List of articles</h2>
-            <div class="articles-grid scrollable-list">
-                @foreach ($articles as $article)
-                <a href="/article/{{ $article->id }}">
+            <div class="scrollable-list">
+                <div class="articles-grid ">
+                    @if(count($articles) > 0)
+                    @foreach ($articles as $article)
                     <div class="article-box green-hover">
-                        <p>{{ $article->id }}. {{ $article->title }}</p>
-                        <p class="article-content">{{ $article->content }}</p>
+                        <a href="/article/{{ $article->id }}">
+                            <p>{{ $article->id }}. {{ $article->title }}</p>
+                            <p class="article-content">{{ $article->content }}</p>
+                        </a>
                     </div>
-                </a>
-                @endforeach
+                    @endforeach
+                    @else
+                    <p>No articles found.</p>
+                    @endif
+                </div>
             </div>
-
         </div>
         <div class="authors bg-dark">
             <div class="scrollable-list">
@@ -38,9 +43,7 @@
             </div>
         </div>
     </div>
-
     @endsection
-
 </body>
 
 </html>

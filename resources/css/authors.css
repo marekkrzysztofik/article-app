@@ -1,0 +1,36 @@
+.authors {
+    width: 15vw;
+    height: 55vh;
+    border-radius: 10%;
+    margin-top: 2rem;
+    padding: 2rem;
+}
+
+.author-item {
+    margin: 0.3rem auto;
+    padding: 0.3rem 1rem;
+    border-radius: 10px;
+    transition: 0.2s all;
+}
+
+.top-authors {
+    flex-direction: column;
+    justify-content: center;
+}
+
+.table {
+    width: 40vw;
+    padding: 2rem;
+    height: 30vh;
+    border-radius: 15px;
+
+
+}
+
+.table td {
+    width: 10vw;
+    text-align: center;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
