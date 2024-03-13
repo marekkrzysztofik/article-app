@@ -9,11 +9,13 @@
 
 <body>
     @vite('resources/css/app.css')
-    <nav class="navbar flex">
-        <h1><a href="/">Laravel Articles</a></h1>
-        <h3><a href="/">Home</a></h3>
-        <h3> <a href="/top">Top 3 Authors</a></h3>
-        <h3> <a href="/create">Create article</a></h3>
+    <nav class="navbar flex bg-dark">
+       
+            <h1><a href="/">Laravel Articles</a></h1>
+        
+        <a href="/">Home</a>
+        <a href="/top">Top 3 Authors</a>
+        <a href="/create">Create article</a>
     </nav>
     <div class="container mt-4">
         @yield('content')

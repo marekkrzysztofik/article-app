@@ -11,27 +11,27 @@
 <body>
     @extends('app')
     @section('content')
-    <form action="{{ route('article.store') }}" method="post" class="grid">
+    <form action="{{ route('article.store') }}" method="post" class="mt-2">
         @csrf
-        <div class="input-box">
-            <h3 for="title">Title:</h3>
-            <input type="text" id="title" name="title" required>
-        </div>
-        <div class="input-box">
-            <h3 for="text">Text:</h3>
-            <textarea id="text" name="content" required></textarea>
-        </div>
+        <div class="flex">
+            <div class="articles bg-dark">
+                <h3 for="title">Title:</h3>
+                <input type="text" class="input green-border-focus" name="title" required>
+                <h3 for="text">Text:</h3>
+                <textarea class="input green-border-focus" name="content" maxlength="255" required></textarea>
+            </div>
+            <div class="select flex space-between bg-dark">
+                <h3 for="authors">Authors:</h3>
+                <select name="authors[]" multiple required class="green-border-focus">
+                    @foreach ($authors as $author)
+                    <option value="{{ $author->id }}">{{ $author->name }}</option>
+                    @endforeach
+                </select>
+                
+            <button type="submit" class="button">Dodaj artykuł</button>
 
-
-        <div class="input-box">
-            <h3 for="authors">Authors:</h3>
-            <select id="authors" name="authors[]" multiple required>
-                @foreach ($authors as $author)
-                <option value="{{ $author->id }}">{{ $author->name }}</option>
-                @endforeach
-            </select>
+            </div>
         </div>
-        <button type="submit">Dodaj artykuł</button>
     </form>
     @endsection
 

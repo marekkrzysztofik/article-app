@@ -9,8 +9,8 @@
 <body>
     @extends('app')
     @section('content')
-    <div class="article">
-        <h2>Article {{ $article->id }}</h2>
+    <div class="article bg-dark">
+        <h2 class="mb-1">Article {{ $article->id }}</h2>
         <p><span>Authors:</span> @foreach ($article->authors as $author)
             {{ $author->name }},
             @endforeach

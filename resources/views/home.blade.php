@@ -11,20 +11,29 @@
     @extends('app')
     @section('content')
     <div class=flex>
-        <div class="list-box">
-            <div class="scrollable-list">
-                <h2>List of articles</h2>
+        <div class="articles bg-dark mt-2">
+            <h2 class="mb-1">List of articles</h2>
+            <div class="articles-grid scrollable-list">
                 @foreach ($articles as $article)
-                <p><a href="/article/{{ $article->id }}">{{ $article->id }}. {{ $article->title }}</a></p>
+                <a href="/article/{{ $article->id }}">
+                    <div class="article-box green-hover">
+                        <p>{{ $article->id }}. {{ $article->title }}</p>
+                        <p class="article-content">{{ $article->content }}</p>
+                    </div>
+                </a>
                 @endforeach
             </div>
 
         </div>
-        <div class="list-box">
+        <div class="authors bg-dark">
             <div class="scrollable-list">
-                <h2>List of our authors</h2>
+                <h2 class="mb-1">Our authors</h2>
                 @foreach ($authors as $author)
-                <p><a href="/author/{{ $author->id }}">{{ $author->id }}. {{ $author->name }}</a></p>
+                <a href="/author/{{ $author->id }}">
+                    <div class="author-item green-hover">
+                        <p>{{ $author->id }}. {{ $author->name }}</p>
+                    </div>
+                </a>
                 @endforeach
             </div>
         </div>

@@ -1,0 +1,40 @@
+.articles {
+    width: 40vw;
+    height: 55vh;
+    border-radius: 10%;
+    padding: 2rem;
+}
+
+.article-box {
+    width: 15vw;
+    height: 100%;
+    padding: 0.3rem 1rem;
+    border-radius: 10px;
+    transition: 0.2s all;
+}
+
+.article-content {
+    font-size: 0.9rem;
+    font-style: italic;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+}
+
+.articles-grid {
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr;
+    grid-column-gap: 2rem;
+    grid-row-gap: 1rem;
+}
+
+.article {
+    width: 55vw;
+    height: 55vh;
+    border-radius: 10%;
+    margin-top: 2rem;
+    padding: 2.5rem;
+}

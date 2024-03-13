@@ -1,0 +1,23 @@
+.scrollable-list {
+    overflow: auto;
+    height: 85%;
+}
+
+.scrollable-list::-webkit-scrollbar {
+    width: 10px;
+}
+
+.scrollable-list::-webkit-scrollbar-track-piece {
+    background: var(--dark);
+    border: (solid 1px var(--dark));
+}
+
+.scrollable-list::-webkit-scrollbar-thumb {
+    background: var(--green);
+}
+
+.scrollable-list::-webkit-scrollbar-button:end:increment {
+    height: 2%;
+    display: block;
+    background: transparent;
+}
