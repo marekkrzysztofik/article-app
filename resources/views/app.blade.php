@@ -18,7 +18,7 @@
         <a href="/create">Create article</a>
     </nav>
     <div class="container mt-4">
-        @yield('content')
+        @yield('content') 
     </div>
 </body>
 
