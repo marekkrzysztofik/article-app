@@ -1,6 +1,6 @@
 
 ## How to run this project.
-
+- Install latest [php](https://www.php.net/downloads.php) and [mysql](https://dev.mysql.com/downloads/installer/)
 - Install and run [xammp](https://www.apachefriends.org/pl/index.html).
 - Start MySql.
 - Open command line in project's directory and run php artisan migrate
